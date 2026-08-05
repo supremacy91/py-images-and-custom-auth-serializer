@@ -16,7 +16,7 @@ def movie_image_file_path(instance, filename):
         f"{extension}"
     )
 
-    return Path("uploads/movies") / filename
+    return str(Path("uploads/movies") / filename)
 
 
 class CinemaHall(models.Model):
